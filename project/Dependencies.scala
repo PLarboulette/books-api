@@ -32,6 +32,7 @@ object Dependencies {
     ws,
     evolutions,
     "com.beachape" %% "enumeratum" % "1.5.13",
+    "com.beachape" %% "enumeratum-play" % "1.5.13",
     "com.typesafe" % "config" % "1.3.4"
   ) ++ databaseDependencies ++ testDependencies ++logDependencies ++ jsonDependencies ++ catsDependencies ++ catsDependencies
 
