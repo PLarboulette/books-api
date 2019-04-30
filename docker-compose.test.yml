@@ -1,0 +1,10 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: books-api-test
+      POSTGRES_USER: books-api-test
+      POSTGRES_PASSWORD: books-api-test_password
+    ports:
+      - 5432:5432
