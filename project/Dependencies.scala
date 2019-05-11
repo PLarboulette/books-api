@@ -1,11 +1,11 @@
-import play.sbt.PlayImport.{evolutions, guice, jdbc, ws}
+import play.sbt.PlayImport.{ evolutions, guice, jdbc, ws }
 import sbt._
 
 object Dependencies {
 
   val databaseDependencies = Seq(
-    "org.postgresql" % "postgresql" % "42.2.5",
-    "com.typesafe.play" %% "anorm" % "2.6.0-M1"
+    "org.postgresql"    % "postgresql" % "42.2.5",
+    "com.typesafe.play" %% "anorm"     % "2.6.0-M1"
   )
 
   val jsonDependencies = Seq(
@@ -13,8 +13,8 @@ object Dependencies {
   )
 
   val testDependencies = Seq(
-    "org.scalatest" %% "scalatest" % "3.0.7",
-    "org.scalacheck" %% "scalacheck" % "1.14.0",
+    "org.scalatest"          %% "scalatest"          % "3.0.7",
+    "org.scalacheck"         %% "scalacheck"         % "1.14.0",
     "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.2" % Test
   )
 
@@ -23,7 +23,7 @@ object Dependencies {
   )
 
   val catsDependencies = Seq(
-    "org.typelevel"                %% "cats-effect"              % "1.1.0"
+    "org.typelevel" %% "cats-effect" % "1.1.0"
   )
 
   val apiDependencies = Seq(
@@ -31,9 +31,9 @@ object Dependencies {
     jdbc,
     ws,
     evolutions,
-    "com.beachape" %% "enumeratum" % "1.5.13",
+    "com.beachape" %% "enumeratum"      % "1.5.13",
     "com.beachape" %% "enumeratum-play" % "1.5.13",
-    "com.typesafe" % "config" % "1.3.4"
-  ) ++ databaseDependencies ++ testDependencies ++logDependencies ++ jsonDependencies ++ catsDependencies ++ catsDependencies
+    "com.typesafe" % "config"           % "1.3.4"
+  ) ++ databaseDependencies ++ testDependencies ++ logDependencies ++ jsonDependencies ++ catsDependencies ++ catsDependencies
 
 }
