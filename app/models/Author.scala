@@ -2,12 +2,11 @@ package models
 
 import java.util.UUID
 
-import play.api.libs.json.{Reads, Writes}
+import play.api.libs.json.{ Reads, Writes }
 
-case class Author
-(
-  idAuthor: UUID,
-  name: String
+case class Author(
+    idAuthor: UUID,
+    name: String
 )
 
 object Author {

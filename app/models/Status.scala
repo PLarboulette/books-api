@@ -3,7 +3,6 @@ import enumeratum._
 
 import scala.collection.immutable
 
-
 sealed trait Status extends EnumEntry
 
 object Status extends Enum[Status] with PlayJsonEnum[Status] {

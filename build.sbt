@@ -1,7 +1,7 @@
 import sbt.Keys.libraryDependencies
 import Dependencies._
 
-name := """book-api"""
+name := """books-api"""
 organization := "com.example"
 
 version := "1.0-SNAPSHOT"

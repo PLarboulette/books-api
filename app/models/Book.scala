@@ -3,14 +3,13 @@ package models
 import java.time.Instant
 import java.util.UUID
 
-import play.api.libs.json.{Reads, Writes}
+import play.api.libs.json.{ Reads, Writes }
 
-case class Book
-(
+case class Book(
     idBook: UUID,
     title: String,
     idLibrary: UUID, // Link to the id of one of libraries of an user
-    idAuthor: Option[UUID],  // Link to the id of an author
+    author: Option[String], // Link to the id of an author
     collection: String,
     status: Status,
     format: Format,
