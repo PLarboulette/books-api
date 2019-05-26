@@ -40,7 +40,7 @@ CREATE TABLE "Book"
     "createdAt" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     "updatedAt" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     "deletedAt" TIMESTAMPTZ
-)
+);
 
 # --- !Downs
 
