@@ -1,6 +1,6 @@
 version: '2'
 services:
-  db:
+  db_test:
     image: postgres
     environment:
       POSTGRES_DB: books-api-test
