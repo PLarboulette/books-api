@@ -1,7 +1,5 @@
 # --- !Ups
 
-CREATE DATABASE "books-api";
-
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE "User"
@@ -53,5 +51,3 @@ DROP TABLE "Library";
 DROP TABLE "User";
 
 DROP EXTENSION "uuid-ossp";
-
-DROP DATABASE "books-api";
