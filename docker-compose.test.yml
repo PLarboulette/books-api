@@ -7,4 +7,4 @@ services:
       POSTGRES_USER: books-api-test
       POSTGRES_PASSWORD: books-api-test_password
     ports:
-      - 5432:5432
+      - 5433:5432
